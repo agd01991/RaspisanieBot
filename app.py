@@ -32,7 +32,7 @@ room = f'Время запуска {current_time}'
 
 print(f'{sbj} \n{room}')
 send_message_to_telegram(sbj, room)
-
+send_message_to_telegram_logs
 
 while True:
     # Ваш код для получения расписания
