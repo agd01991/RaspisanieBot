@@ -9,6 +9,7 @@ from urllib.parse import quote
 token="6427592954:AAGgNQSwhq7r5baOpFAJpmrJumWa-ntOs5E"
 my_chat_id = "394369310"
 logs_chat_id2 = "-4039568612"
+final_chat_id3 = "-1001985927111"
 
 # Функция для отправки сообщения в Telegram
 def send_message_to_telegram(sbj, room, chat):
@@ -64,6 +65,7 @@ while True:
                     url_match = re.search(r'href="([^"]+)"', room)
                     room = url_match.group(1)
                     send_message_to_telegram(sbj, room, my_chat_id)
+                    send_message_to_telegram(sbj, room, final_chat_id3)
                     time.sleep(60)
                 # Проверяем, что текущее время 19:30
                 if current_time.hour == 19 and current_time.minute == 29:
@@ -71,6 +73,7 @@ while True:
                     sbj = 'Научно-исследовательская и проектная деятельность'
                     room = 'https://teams.microsoft.com/l/team/19%3aACCwkZlMB2VUyGLZaWGvyIz5zMFC_GblQMCnw9d41qs1%40thread.tacv2/conversations?groupId=223978d5-fde0-433a-bf3b-9adf117d6759&tenantId=30b86380-7ee9-41a2-afbf-dd87752f1db1'
                     send_message_to_telegram(sbj, room, my_chat_id)
+                    send_message_to_telegram(sbj, room, final_chat_id3)
                     time.sleep(60)
 
         # На вторник
@@ -91,6 +94,7 @@ while True:
                     url_match = re.search(r'href="([^"]+)"', room)
                     room = url_match.group(1)
                     send_message_to_telegram(sbj, room, my_chat_id)
+                    send_message_to_telegram(sbj, room, final_chat_id3)
                     time.sleep(60)
 
         # На среду 
@@ -111,6 +115,7 @@ while True:
                     url_match = re.search(r'href="([^"]+)"', room)
                     room = url_match.group(1)
                     send_message_to_telegram(sbj, room, my_chat_id)
+                    send_message_to_telegram(sbj, room, final_chat_id3)
                     time.sleep(60)
 
         # На четверг 
@@ -125,6 +130,7 @@ while True:
             if current_time.hour == 19 and current_time.minute == 29:
                 print('Время 19:30')
                 send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
                 time.sleep(60)
 
         # На пятницу
@@ -139,6 +145,7 @@ while True:
             if current_time.hour == 17 and current_time.minute == 54:
                 print('Время 17:55')
                 send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
                 time.sleep(60)
 
         # На субботу
@@ -153,6 +160,7 @@ while True:
                 room = 'http://clck.ru/MCYiY'
                 sbj = 'Современные технологии программирования'
                 send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
                 time.sleep(60)
             
             # Проверяем, что текущее время 12:20
@@ -161,6 +169,7 @@ while True:
                 room = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWIxMGY1ODUtZmJlMi00MjlmLThkNDEtZWViMmY1YjE2NmMy%40thread.v2/0?context=%7b%22Tid%22%3a%2230b86380-7ee9-41a2-afbf-dd87752f1db1%22%2c%22Oid%22%3a%221672541d-24a4-4e53-ada8-5cb860827e5b%22%7d'
                 sbj = 'Биомедицинские технологии'
                 send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
                 time.sleep(60)
 
 
