@@ -85,7 +85,7 @@ while True:
             if len(tuesday_schedule) > 0:
                 lesson = tuesday_schedule[0]
 
-                room = lesson["auditories"][0]["title"]
+                room = 'Ссылка в группе "234-321"'
                 sbj = lesson["sbj"]
 
                 # Проверяем, что текущее время 19:30
