@@ -106,7 +106,7 @@ while True:
             if len(wednesday_schedule) > 0:
                 lesson = wednesday_schedule[0]
 
-                room = lesson["auditories"][0]["title"]
+                room = 'https://us04web.zoom.us/j/74707651287?pwd=KpaENgf53Um6BMvvfWLIQ9X2fGJY5e.1'
                 sbj = lesson["sbj"]
 
                 # Проверяем, что текущее время 19:30
@@ -182,3 +182,9 @@ while True:
     send_message_to_telegram(sbj, room, logs_chat_id2)
 
     time.sleep(57)
+
+
+
+
+# git pull amvera master
+# git push amvera master
