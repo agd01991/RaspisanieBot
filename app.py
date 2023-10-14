@@ -141,9 +141,9 @@ while True:
             room = 'https://us06web.zoom.us/j/6423304512?pwd=STdqekhJVVVkNGlMM2RJdlNQc2FXdz09'
             sbj = 'Логика и алгоритмы'
 
-            # Проверяем, что текущее время 17:55
-            if current_time.hour == 17 and current_time.minute == 54:
-                print('Время 17:55')
+            # Проверяем, что текущее время 17:50
+            if current_time.hour == 17 and current_time.minute == 49:
+                print('Время 17:50')
                 send_message_to_telegram(sbj, room, my_chat_id)
                 send_message_to_telegram(sbj, room, final_chat_id3)
                 time.sleep(60)
