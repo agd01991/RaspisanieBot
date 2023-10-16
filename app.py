@@ -51,30 +51,23 @@ while True:
         if current_time.weekday() == 0:
 
             print('Сегодня понедельник!')
-            monday_schedule = schedule_data["grid"]["1"]["6"]  # Понедельник, 6 - 7 пара
 
-            if len(monday_schedule) > 0:
-                lesson = monday_schedule[0]
-
-                room = lesson["auditories"][0]["title"]
-                sbj = lesson["sbj"]
-
-                # Проверяем, что текущее время 17:55
-                if current_time.hour == 17 and current_time.minute == 54:
-                    print('Время 17:55')
-                    url_match = re.search(r'href="([^"]+)"', room)
-                    room = url_match.group(1)
-                    send_message_to_telegram(sbj, room, my_chat_id)
-                    send_message_to_telegram(sbj, room, final_chat_id3)
-                    time.sleep(60)
-                # Проверяем, что текущее время 19:30
-                if current_time.hour == 19 and current_time.minute == 29:
-                    print('Время 19:30')
-                    sbj = 'Научно-исследовательская и проектная деятельность'
-                    room = 'https://teams.microsoft.com/l/team/19%3aACCwkZlMB2VUyGLZaWGvyIz5zMFC_GblQMCnw9d41qs1%40thread.tacv2/conversations?groupId=223978d5-fde0-433a-bf3b-9adf117d6759&tenantId=30b86380-7ee9-41a2-afbf-dd87752f1db1'
-                    send_message_to_telegram(sbj, room, my_chat_id)
-                    send_message_to_telegram(sbj, room, final_chat_id3)
-                    time.sleep(60)
+            # Проверяем, что текущее время 17:55
+            if current_time.hour == 17 and current_time.minute == 54:
+                print('Время 17:55')
+                sbj = 'Основы языкознания'
+                room = 'Ссылка в группе "234-321"'
+                send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
+                time.sleep(60)
+            # Проверяем, что текущее время 19:30
+            if current_time.hour == 19 and current_time.minute == 29:
+                print('Время 19:30')
+                sbj = 'Научно-исследовательская и проектная деятельность'
+                room = 'https://teams.microsoft.com/l/team/19%3aACCwkZlMB2VUyGLZaWGvyIz5zMFC_GblQMCnw9d41qs1%40thread.tacv2/conversations?groupId=223978d5-fde0-433a-bf3b-9adf117d6759&tenantId=30b86380-7ee9-41a2-afbf-dd87752f1db1'
+                send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
+                time.sleep(60)
 
         # На вторник
         if current_time.weekday() == 1:
