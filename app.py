@@ -64,7 +64,7 @@ while True:
             if current_time.hour == 19 and current_time.minute == 29:
                 print('Время 19:30')
                 sbj = 'Научно-исследовательская и проектная деятельность'
-                room = 'https://teams.microsoft.com/l/team/19%3aACCwkZlMB2VUyGLZaWGvyIz5zMFC_GblQMCnw9d41qs1%40thread.tacv2/conversations?groupId=223978d5-fde0-433a-bf3b-9adf117d6759&tenantId=30b86380-7ee9-41a2-afbf-dd87752f1db1'
+                room = 'https://teams.microsoft.com/l/meetup-join/19:ACCwkZlMB2VUyGLZaWGvyIz5zMFC_GblQMCnw9d41qs1@thread.tacv2/1695047924859?context=%7B%22Tid%22:%2230b86380-7ee9-41a2-afbf-dd87752f1db1%22,%22Oid%22:%2238f19c67-90d5-461b-899e-42103096b463%22%7D'
                 send_message_to_telegram(sbj, room, my_chat_id)
                 send_message_to_telegram(sbj, room, final_chat_id3)
                 time.sleep(60)
