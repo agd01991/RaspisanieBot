@@ -73,43 +73,39 @@ while True:
         if current_time.weekday() == 1:
           
             print('Сегодня вторник!')
-            tuesday_schedule = schedule_data["grid"]["2"]["7"]  # Вторник, 7 пара
+            
 
-            if len(tuesday_schedule) > 0:
-                lesson = tuesday_schedule[0]
 
-                room = 'Ссылка в группе "234-321"'
-                sbj = lesson["sbj"]
 
-                # Проверяем, что текущее время 19:30
-                if current_time.hour == 19 and current_time.minute == 29:
-                    print('Время 19:30')
-                    url_match = re.search(r'href="([^"]+)"', room)
-                    room = url_match.group(1)
-                    send_message_to_telegram(sbj, room, my_chat_id)
-                    send_message_to_telegram(sbj, room, final_chat_id3)
-                    time.sleep(60)
+            room = 'Ссылка в группе "234-321"'
+            sbj = 'Обучающие системы'
+
+            # Проверяем, что текущее время 19:30
+            if current_time.hour == 19 and current_time.minute == 29:
+                print('Время 19:30')
+                url_match = re.search(r'href="([^"]+)"', room)
+                room = url_match.group(1)
+                send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
+                time.sleep(60)
 
         # На среду 
         if current_time.weekday() == 2:
 
             print('Сегодня среда!')
-            wednesday_schedule = schedule_data["grid"]["2"]["7"]  # Среда, 7 пара
 
-            if len(wednesday_schedule) > 0:
-                lesson = wednesday_schedule[0]
 
-                room = 'https://us04web.zoom.us/j/74707651287?pwd=KpaENgf53Um6BMvvfWLIQ9X2fGJY5e.1'
-                sbj = lesson["sbj"]
+            room = 'https://us04web.zoom.us/j/74707651287?pwd=KpaENgf53Um6BMvvfWLIQ9X2fGJY5e.1'
+            sbj = 'Анатомия и физиология человека'
 
-                # Проверяем, что текущее время 19:30
-                if current_time.hour == 19 and current_time.minute == 29:
-                    print('Время 19:30')
-                    url_match = re.search(r'href="([^"]+)"', room)
-                    room = url_match.group(1)
-                    send_message_to_telegram(sbj, room, my_chat_id)
-                    send_message_to_telegram(sbj, room, final_chat_id3)
-                    time.sleep(60)
+            # Проверяем, что текущее время 19:30
+            if current_time.hour == 19 and current_time.minute == 29:
+                print('Время 19:30')
+                url_match = re.search(r'href="([^"]+)"', room)
+                room = url_match.group(1)
+                send_message_to_telegram(sbj, room, my_chat_id)
+                send_message_to_telegram(sbj, room, final_chat_id3)
+                time.sleep(60)
 
         # На четверг 
         if current_time.weekday() == 3:
