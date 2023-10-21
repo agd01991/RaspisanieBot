@@ -116,7 +116,7 @@ while True:
 
             print('Сегодня четверг!')
             # Четверг, 7 пара
-            room = 'Ссылка в группе "234-321"'
+            room = 'https://teams.microsoft.com/l/meetup-join/19:LfmBvtjhlBb3ETLUFzP_HW_2036v9Zlqcmxoom7GatE1@thread.tacv2/1695919237565?context=%7B%22Tid%22:%2230b86380-7ee9-41a2-afbf-dd87752f1db1%22,%22Oid%22:%2238f19c67-90d5-461b-899e-42103096b463%22%7D'
             sbj = 'Компьютерная лингвистика'
 
             # Проверяем, что текущее время 19:30
